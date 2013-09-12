@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using Microsoft.AspNet.SignalR;
 using SignalR.Model.Factories;
 using SignalR.Model.Repositories;
