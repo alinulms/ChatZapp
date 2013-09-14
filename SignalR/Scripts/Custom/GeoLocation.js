@@ -18,7 +18,7 @@
   $.connection.hub.start().done(function () {
     $('#sendmessage').click(function () {
       $('#error').val(BrowserDetect.browser);
-      chat.server.send($('#UserName').val(), $('#message').val(), $('#discussionId').val(), $('#Latitude').val(), $('#Longitude').val(), BrowserDetect.browser + " " + BrowserDetect.version + " on " + BrowserDetect.OS );
+      chat.server.send($('#UserName').val(), $('#message').val(), $('#discussionId').val(), $('#Latitude').val(), $('#Longitude').val(), BrowserDetect.browser + " " + BrowserDetect.version + " on " + BrowserDetect.OS);
       $('#message').val('').focus();
     });
   });
