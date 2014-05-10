@@ -120,6 +120,8 @@ ul {
 li {
   font-size: 2em;
   *zoom: 1;
+  font-family: sans-serif Verdana;
+  padding-top:3px;
 }
 
   li:before,
@@ -145,10 +147,8 @@ li {
   .navigation input {
     float: left;
     text-decoration: none;
-    
-    width: 50%;
-    text-align: center;
-    
+    width:209px;
+    text-align: center;    
   }
 
   .navigation a:hover {
@@ -288,7 +288,7 @@ li {
 	font-style:normal;
 	height:50px;
 	line-height:50px;
-	width:100px;
+	width:50px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #9b14b3;
