@@ -28,7 +28,7 @@
                     <asp:LinkButton runat="server" OnClick="ShowAllDiscussion" Text="List Discussions" />
                     <%--<asp:Button runat="server" OnClick="ShowAllDiscussion" Text="List discussions" UseSubmitBehavior="False" />--%>
                 </li>
-                <li class="<%#IsMessageBoardPage %>">
+                <li>
                     <asp:LinkButton runat="server" OnClick="ChangeRadius" Text="Change radius" />
                     <%--<asp:Button runat="server" OnClick="ChangeRadius" Text="Change radius" UseSubmitBehavior="False" />--%>
                 </li>
