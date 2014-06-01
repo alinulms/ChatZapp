@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace SignalR.Controls
 {
@@ -18,6 +19,21 @@ namespace SignalR.Controls
     protected void ChangeRadius(object sender, EventArgs e)
     {
       Response.Redirect("/Home.aspx");
+    }
+
+    public string IsMessageBoardPage
+    {
+      get { return GetPageName().ToLower().Equals("messageboard.aspx") ? "active" : string.Empty; }
+    }
+
+    public string IsNewDiscussionPage
+    {
+      get { return GetPageName().ToLower().Equals("DiscussionBoard.aspx") ? "active" : string.Empty; }
+    }
+
+    private string GetPageName()
+    {
+      return Request.Url.ToString().Split('/').Last();
     }
   }
 }

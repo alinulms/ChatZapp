@@ -8,7 +8,7 @@
     var encodedMsg = $('<div />').text(message).html();
 
     if ($('#discussionId').val() == discussionId) {
-      $('#message_' + discussionId).append('<li><strong>' + encodedName
+        $('#message_' + discussionId).append('<li class="list-group-item"><strong>' + encodedName
           + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
     }
   };

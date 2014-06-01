@@ -94,6 +94,7 @@
     <Content Include="Home.aspx" />
     <Content Include="MessageBoard.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Custom\BrowserDetect.js" />
     <Content Include="Scripts\Custom\EventHandler.js" />
     <Content Include="Scripts\Custom\GeoLocation.js" />
@@ -104,8 +105,11 @@
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\jquery.signalR-1.0.0.js" />
     <Content Include="Scripts\jquery.signalR-1.0.0.min.js" />
+    <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\Images\city.png" />
     <Content Include="Styles\Main.css" />
+    <Content Include="Styles\navbar.css" />
+    <Content Include="Styles\standard.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

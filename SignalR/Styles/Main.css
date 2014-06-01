@@ -59,6 +59,10 @@ h2 {
   margin-top: -150px;
 }
 
+.login-label{
+    color:white;
+}
+
 .button-start {
   margin-top: 10px;
 	-moz-box-shadow:inset 0px 1px 0px 0px #e184f3;
@@ -117,12 +121,12 @@ ul {
   list-style: none;
 }
 
-li {
+/*li {
   font-size: 2em;
   *zoom: 1;
   font-family: sans-serif Verdana;
   padding-top:3px;
-}
+}*/
 
   li:before,
   li:after {
@@ -208,10 +212,10 @@ li {
     width: 100%;
   }
 
-  #discussion_container #message {
+  /*#discussion_container #message {
     width: 50%;
     border: 3px double #CCCCCC;
-  }
+  }*/
   
   .button-send {
 	-moz-box-shadow:inset 0px 1px 0px 0px #e184f3;
