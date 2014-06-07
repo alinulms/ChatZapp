@@ -12,7 +12,13 @@
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=795898957121228&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+        var redirect = function () {
+            window.location = "/MessageBoard.aspx";
+        };
+
+    </script>
 
     <asp:Panel runat="server" CssClass="startupControllers">
         <div class="row">
@@ -43,9 +49,8 @@
                         <p>
                             <asp:LinkButton runat="server" OnClick="Signup" Text="Signup" class="btn btn-secundary" role="button"></asp:LinkButton>
                         </p>
-                        <p>
-                            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
-                        </p>
+
+                        <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" onlogin="redirect"></div>
                     </div>
                 </div>
             </div>
