@@ -91,6 +91,7 @@
     <Content Include="Controls\DiscussionControl.ascx" />
     <Content Include="Controls\MessageBoardControl.ascx" />
     <Content Include="DiscussionBoard.aspx" />
+    <Content Include="FacebookTest.html" />
     <Content Include="Home.aspx" />
     <Content Include="MessageBoard.aspx" />
     <Content Include="Global.asax" />

@@ -48,7 +48,18 @@ h2 {
 /* Landscape phones and down */
 @media (max-width: 480px) { body { font-size:80%; line-height: 50%; } }
 
-.userinfo {
+.startupControllers{
+    position:fixed;
+    top: 50%;
+    left: 43%;
+    width: 1000px;
+}
+
+.col-md-2{
+    width:40% !important;
+}
+
+/*.userinfo {
   width: 400px;
   margin: auto auto;
   display: block;
@@ -57,7 +68,7 @@ h2 {
   position: fixed;
   margin-left: -150px;
   margin-top: -150px;
-}
+}*/
 
 .login-label{
     color:white;
