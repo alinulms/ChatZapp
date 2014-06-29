@@ -50,13 +50,17 @@ h2 {
 
 .startupControllers{
     position:fixed;
-    top: 50%;
-    left: 43%;
+    top: 25%;
+    left: 20%;
     width: 1000px;
 }
 
 .col-md-2{
     width:40% !important;
+}
+
+.btn{
+    margin-top:10px;
 }
 
 /*.userinfo {

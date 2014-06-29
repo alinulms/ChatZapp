@@ -26,6 +26,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <%--<asp:PlaceHolder ID="plhLogout" runat="server" Visible="false">
+                <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+                <script type="text/javascript">
+                    FB.Event.subscribe('auth.logout', function (response) {__doPostBack("<%= btnLogout.UniqueID %>", "");});
+                </script>
+            </asp:PlaceHolder>--%>
             <asp:ContentPlaceHolder ID="ContentPlaceholder" runat="server">
             </asp:ContentPlaceHolder>
 

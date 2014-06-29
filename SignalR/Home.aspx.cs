@@ -1,4 +1,9 @@
-﻿using System;
+﻿
+using Framework.Authentication.Model.Factories;
+using Framework.Authentication.Model.Repositories;
+using System;
+using System.Net;
+using System.Web.Security;
 
 namespace SignalR
 {
@@ -18,11 +23,5 @@ namespace SignalR
       Session["Longitude"] = Longitude.Value;
       Response.Redirect("/MessageBoard.aspx");
     }
-
-    protected void Login(object sender, EventArgs e)
-    { }
-
-    protected void Signup(object sender, EventArgs e)
-    { }
   }
 }

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using SignalR.Model;
 using SignalR.Model.Repositories;
+using System.Linq;
+using Facebook.Infrastructure;
+using Framework.Facebook.Infrastructure;
 
 namespace SignalR
 {
@@ -10,6 +13,14 @@ namespace SignalR
     protected override void OnInit(EventArgs e)
     {
       base.OnInit(e);
+      FacebookUser user = FacebookAuth.CheckLogin();
+      if (user != null)
+      {
+        
+        Response.Write("<p>" + user.Email);
+        Response.Write("<p>" + user.FirstName);
+        Response.Write("<p>" + user.LastName);
+      }
       DataBind();
     }
 
@@ -23,5 +34,7 @@ namespace SignalR
       MessageRepository.DeleteAll();
       Response.Redirect(".");
     }
+
+   
   }
 }

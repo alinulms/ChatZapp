@@ -38,6 +38,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.6.6.0\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Authentication">
+      <HintPath>..\Framework\Authentication\bin\Framework.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Facebook">
+      <HintPath>..\Framework\Facebook\bin\Framework.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Mongo">
+      <HintPath>..\Framework\MongoProvider\bin\Framework.Mongo.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.0.0\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
@@ -56,11 +68,13 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>..\packages\mongocsharpdriver.1.8.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    <Reference Include="MongoDB.Bson, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Bson.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Driver">
-      <HintPath>..\packages\mongocsharpdriver.1.8.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    <Reference Include="MongoDB.Driver, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -160,6 +174,9 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\FormatCoordinateService.cs" />
+    <Compile Include="Infrastructure\MongoDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MessageBoard.aspx.cs">
       <DependentUpon>MessageBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,7 +189,6 @@
     </Compile>
     <Compile Include="Infrastructure\GeoDistanceCalculator.cs" />
     <Compile Include="Infrastructure\MessageFilter.cs" />
-    <Compile Include="Infrastructure\MongoDataProvider.cs" />
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
